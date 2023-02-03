@@ -29,13 +29,6 @@ app.get("/", function (req, res) {
   res.sendFile(__dirname + "/public/signup.html");
 });
 
-//Setting up MailChimp
-// mailchimp.setConfig({
-//   //*****************************ENTER YOUR API KEY HERE******************************
-//   apiKey: "d0431c28006b580a6fef3409111e69db-us9",
-//   //*****************************ENTER YOUR API KEY PREFIX HERE i.e.THE SERVER******************************
-//   server: "us9",
-// });
 
 app.post("/", function (req, res) {
   var firstName = req.body.fName;
@@ -122,8 +115,3 @@ app.post("/failure", function (req, res) {
 app.listen(port, function () {
   console.log("Server is running on port ", port);
 });
-
-//milchimp api
-// d0431c28006b580a6fef3409111e69db-us9
-
-//list id 5275572843
